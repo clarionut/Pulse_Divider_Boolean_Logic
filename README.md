@@ -11,7 +11,7 @@ The pulse divider now has a /1 output, which is a buffered copy of the incoming 
 There are significant changes to the logic gates too
 - the AND and OR gates have the same modification to their outputs as the pulse divider stages
 - the original XOR gate can only compare signals of approximately the same voltage. This version has a voltage conditioner on its inputs (using op-amp comparators), allowing a wider range of input signals to be processed.
-- the XOR comparator / output stage is an LM324 running off +9V
+- the XOR comparator / output stage is an LM324 running on +9V
 - the dedicated XNOR circuitry has been removed
 - the NOT gates are replaced by 3 op-amp inverters using the remaining stages of the LM324. These are normalled to the AND, OR and XOR outputs providing NAND, NOR and XNOR functions by default, but can be used to invert any other logic signal for maximum flexibility
 
