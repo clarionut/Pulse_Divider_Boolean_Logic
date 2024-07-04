@@ -13,6 +13,6 @@ There are significant changes to the logic gates too
 - the original XOR gate can only compare signals of approximately the same voltage. I added a voltage conditioner to the input using op-amp comparators, allowing a wider range of input signals to be compared.
 - the XOR comparator / output stage is an LM324 running off +9V
 - the dedicated XNOR circuitry has been removed
-- the NOT gates are replaced by 3 op-amp inverters using the remaining stages of the LM324, with their inputs normalled to the AND, OR and XOR outputs for maximum flexibility
+- the NOT gates are replaced by 3 op-amp inverters using the remaining stages of the LM324. These are normalled to the AND, OR and XOR outputs providing NAND, NOR and XNOR by default, but can be used to invert any other logic signal for maximum flexibility
 
 For reasons of economy I built the pulse divider and Boolean logic circuits on two separate PCBs. The logic board is daisy-chained from the divider board for its power supply, and also uses two stages of the TL084 as its input voltage conditioner. To build this board as a stand-alone unit will require a redesign with power input circuitry and a TL082 as the voltage conditioner.
