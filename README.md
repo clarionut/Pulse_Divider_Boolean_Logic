@@ -1,6 +1,6 @@
 # Pulse Divider and Boolean Logic
 
-A synthesizer module based on the original CGS36 circuit (https://sdiy.info/wiki/CGS_pulse_divider_and_Boolean_logic).
+A synthesizer module based on the [original CGS36 circuit](https://sdiy.info/wiki/CGS_pulse_divider_and_Boolean_logic).
 
 I was particularly concerned about high current consumption as the original outputs put 15V across a potential divider with a total resistance of 2.8k.
 Even at Eurorack levels of 12V that's over 4mA per 'on' output, not counting the LEDs. Instead I powered the outputs from a dedicated 78L09 9V supply
